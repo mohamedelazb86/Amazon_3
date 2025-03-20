@@ -10,7 +10,7 @@ class Profile(models.Model):
     code=models.CharField(max_length=75,default=generate_code)
 
     def __str__(self):
-        return self.user
+        return str(self.user)
     
 
 # if we create new user create new profile by signals
