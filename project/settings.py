@@ -42,8 +42,11 @@ INSTALLED_APPS = [
 
     # my package
     "django_bootstrap5",
+    "taggit",
+    'django_summernote',
 
     #my apps
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +134,7 @@ STATICFILES_DIRS = [
 
 # MEDIA
 MEDIA_URL='/media/'
-MEDIA_ROOT=BASE_DIR / "media",
+MEDIA_ROOT=BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
