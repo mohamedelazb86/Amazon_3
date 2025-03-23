@@ -38,6 +38,6 @@ class Review(models.Model):
     rate=models.IntegerField(choices=[(i,i) for i in range(1,5)])
 
     def __str__(self):
-        return f'({self.post}----{self.user})'
+        return str(self.user)
 
 

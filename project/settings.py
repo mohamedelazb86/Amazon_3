@@ -44,10 +44,20 @@ INSTALLED_APPS = [
     "django_bootstrap5",
     "taggit",
     'django_summernote',
+    'rest_framework',
+    'django_filters',
 
     #my apps
     'blog',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'PAGE_SIZE': 50
+}
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -193,3 +203,5 @@ EMAIL_HOST_PASSWORD = 'cdviueootfngklev'
 EMAIL_USE_SSL = False
 
 AUTHENTICATION_BACKENDS=['accounts.backend.Login_UserName_Email']
+
+LOGIN_REDIRECT_URL = '/'
