@@ -1,0 +1,8 @@
+@font-face {
+    font-family: myfont;
+    src: url(Cairo-VariableFont_slnt,wght.ttf);
+  }
+
+  body{
+    font-family: myfont;
+  }

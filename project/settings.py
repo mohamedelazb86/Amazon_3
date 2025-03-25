@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 
     # my package
     "django_bootstrap5",
@@ -46,9 +47,11 @@ INSTALLED_APPS = [
     'django_summernote',
     'rest_framework',
     'django_filters',
+    'drf_yasg',
 
     #my apps
     'blog',
+    'product',
 ]
 
 REST_FRAMEWORK = {
@@ -56,6 +59,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'PAGE_SIZE': 50
 }
+
+
 
 
 
