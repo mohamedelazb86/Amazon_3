@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     #my apps
     'blog',
     'product',
+    'settings',
 ]
 
 REST_FRAMEWORK = {
@@ -87,6 +88,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'settings.setting_context_data.get_context_data',
             ],
         },
     },
